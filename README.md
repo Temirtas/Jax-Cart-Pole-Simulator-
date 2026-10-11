@@ -2,7 +2,7 @@
 
 A small actor-critic reinforcement learning project written in JAX. A neural network learns to balance a pole on a moving cart by pushing the cart left or right. Thousands of games run in parallel on the GPU/CPU using `jax.vmap` and `jax.lax.scan`.
 
-![Trained agent](cartpole_trained.gif)
+![Trained agent](cartpole_demo.gif)
 
 ## Project structure
 
@@ -12,7 +12,7 @@ A small actor-critic reinforcement learning project written in JAX. A neural net
 | `network.py` | Actor-critic neural network (Flax) |
 | `rollout.py` | Runs many games in parallel and auto-resets finished ones |
 | `train.py` | Loss function and training loop; saves weights to `trained_params.pkl` |
-| `visualize.py` | Plays one episode with the trained network and saves `cartpole_trained.gif` |
+| `visualize.py` | Plays one episode with the trained network and saves `cartpole_demo.gif` |
 | `runall.py` | Trains, then opens a live animation window |
 
 ## Setup
@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 ```bash
 python train.py       # train and save weights
-python visualize.py   # create cartpole_trained.gif from the saved weights
+python visualize.py   # create cartpole_demo.gif from the saved weights
 python runall.py      # train, then show a live animation
 ```
 
