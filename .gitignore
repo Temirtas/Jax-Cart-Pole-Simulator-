@@ -1,0 +1,6 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+trained_params.pkl
+.DS_Store

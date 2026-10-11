@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Generated files
+trained_params.pkl
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
